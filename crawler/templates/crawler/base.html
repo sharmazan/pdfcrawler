@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>PDF Crawler</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        min-height: 75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" href="/">PDF Crawler</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="files/">Files</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="urls/">URLS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main" class="container">
+    <div class="jumbotron">
+      <h1>Upload PDF file</h1>
+      <p class="lead">Upload any PDF file to store URLs</p>
+      <form method="post" enctype="multipart/form-data">{% csrf_token %}
+        {{ form }}
+        <button>Submit</button>
+      </form>
+
+    </div>
+  </main>
+  </body>
+</html>
