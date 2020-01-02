@@ -1,5 +1,5 @@
 # PDF Crawler
-This project aim to search through uploaded PDF files for URL and save these URL to the database. 
+This project aims to search through uploaded PDF files for URLs and save these URLs to the database. 
 
 ## How to use
 ### Upload PDF file
@@ -9,8 +9,8 @@ On the main page you could upload any PDF file:
 After file handling, it will redirect you to another page and show "Success" or "Error" message. 
 The main reason for an error is a different file format - the program could handle only PDF files. 
 
-### Other urls
-**/files/** url returns a set of all the of documents that were uploaded: ids, names and number of URLs that were found for each document, in JSON format. 
+### Other URLs
+**/files/** returns a set of all the documents that were uploaded: ids, names, and number of URLs that were found for each document, in JSON format. 
 ![Files output](https://i.snipboard.io/I2Q7FC.jpg)
 
 **/files/<file_id>** returns a set of URLs for a specific document in JSON format.
