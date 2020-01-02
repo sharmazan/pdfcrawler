@@ -25,7 +25,7 @@ SECRET_KEY = '56a$gqaf@&g1d-2e79zt5#$jq)1z1m5)e0!7brrxg#@rmb!@g4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pdfcrawler2019.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
