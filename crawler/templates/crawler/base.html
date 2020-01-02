@@ -8,11 +8,6 @@
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      body {
-        min-height: 75rem;
-      }
-    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
@@ -36,7 +31,7 @@
     <div class="jumbotron">
       <h1>Upload PDF file</h1>
       <p class="lead">Upload any PDF file to store URLs</p>
-      <form method="post" enctype="multipart/form-data">{% csrf_token %}
+      <form method="post" enctype="multipart/form-data">
         {{ form }}
         <button>Submit</button>
       </form>
