@@ -1,4 +1,5 @@
 Django==1.11.27
 gunicorn==19.10.0
+psycopg2-binary==2.8.4
 PyPDF2==1.26.0
 pytz==2019.3
